@@ -132,7 +132,7 @@ header{
 
 .hero{
 
-    min-height:70vh;
+    padding:100px 0 60px;
 
     display:flex;
 
@@ -848,5 +848,123 @@ h2{
     border-radius:12px;
 
     box-shadow:0 20px 60px rgba(0,0,0,.6);
+
+}
+
+/* ========================= */
+/* CREATIVE PORTFOLIO */
+/* ========================= */
+
+#creative .projects-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+#creative .project-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    overflow:hidden;
+
+}
+
+#creative .project-image{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    margin-bottom:20px;
+
+}
+
+#creative h3{
+
+    margin-bottom:15px;
+
+}
+
+#creative p{
+
+    line-height:1.7;
+
+}
+
+#creative .section-intro{
+
+    max-width:750px;
+
+    margin:0 auto;
+
+}
+
+/* ========================= */
+/* ABOUT ME */
+/* ========================= */
+
+.about-content{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:50px;
+
+    margin-top:50px;
+
+    flex-wrap:wrap;
+
+}
+
+.about-image img{
+
+    width:300px;
+
+    border-radius:18px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+.about-info{
+
+    max-width:650px;
+
+}
+
+.about-text{
+
+    text-align:left;
+
+    line-height:1.9;
+
+    font-size:1.1rem;
+
+}
+
+@media(max-width:768px){
+
+    .about-text{
+
+        text-align:center;
+
+    }
 
 }
