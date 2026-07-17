@@ -132,7 +132,7 @@ header{
 
 .hero{
 
-    padding:100px 0 60px;
+    padding:60px 0 40px;
 
     display:flex;
 
@@ -925,27 +925,31 @@ h2{
 
     justify-content:center;
 
-    gap:50px;
+    gap:40px;
 
-    margin-top:50px;
+    margin-top:30px;
 
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
 
 }
 
 .about-image img{
 
-    width:300px;
+    width:220px;
 
-    border-radius:18px;
+    height:220px;
 
-    box-shadow:0 20px 40px rgba(0,0,0,.35);
+    object-fit:cover;
+
+    border-radius:16px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.30);
 
 }
 
 .about-info{
 
-    max-width:650px;
+    max-width:600px;
 
 }
 
@@ -953,9 +957,27 @@ h2{
 
     text-align:left;
 
-    line-height:1.9;
+    line-height:1.8;
 
-    font-size:1.1rem;
+    font-size:1rem;
+
+    margin:0;
+
+}
+
+@media(max-width:900px){
+
+    .about-content{
+
+        flex-wrap:wrap;
+
+    }
+
+    .about-text{
+
+        text-align:center;
+
+    }
 
 }
 
