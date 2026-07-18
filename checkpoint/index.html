@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckPoint</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>CheckPoint</h1>
+            <p>Simple attendance management for youth programs.</p>
+        </header>
+
+        <section class="session-info">
+            <h2>Today's Session</h2>
+
+            <label for="program">Program</label>
+            <select id="program">
+                <option>STEM Club</option>
+                <option>After School</option>
+                <option>Summer Camp</option>
+            </select>
+
+            <p>Date: July 17, 2026</p>
+        </section>
+
+        <section class="checkin-form">
+            <h2>Participant Check-In</h2>
+
+            <label for="name">Participant Name</label>
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter participant name"
+            >
+
+            <label>Status</label>
+
+            <div class="radio-group">
+
+                <label>
+                    <input type="radio" id="present" name="status" checked>
+                    Present
+                </label>
+
+                <label>
+                    <input type="radio" id="absent" name="status">
+                    Absent
+                </label>
+
+            </div>
+
+            <button id="checkinBtn">
+                Check In
+            </button>
+
+        </section>
+
+        <section class="attendance-list">
+
+            <h2>Today's Attendance</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody id="attendanceTable">
+
+                </tbody>
+
+            </table>
+
+            <div class="summary">
+                <p>Present: <span id="presentCount">0</span></p>
+                <p>Absent: <span id="absentCount">0</span></p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
